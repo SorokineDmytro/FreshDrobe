@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router';
 import { navPagesList } from '../Header/NavBar/NavList/navPagesList';
 import NotFoundPage from '../../pages/NotFoundPage';
 import Login from '../../pages/Login';
+import Cart from '../../pages/Cart';
 
 
 const Router = () => {
@@ -13,6 +14,7 @@ const Router = () => {
       ))}
       <Route path="*" element={<NotFoundPage />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/cart" element={<Cart />} />
     </Routes>
   );
 };

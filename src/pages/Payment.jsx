@@ -3,7 +3,7 @@ import TempHeader from '../components/tempHeader'
 
 const Payment = () => {
   return (
-    <TempHeader headerTempText="Page de Paiement"/>
+    <TempHeader headerTempText="Bienvenue sur la page Paiement"/>
   )
 }
 

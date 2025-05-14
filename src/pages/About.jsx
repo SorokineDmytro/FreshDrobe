@@ -4,7 +4,7 @@ import TempHeader from '../components/tempHeader'
 
 const About = () => {
   return (
-    <TempHeader headerTempText="À propos de nous"/>
+    <TempHeader headerTempText="Bienvenue sur la page À propos"/>
   )
 }
 

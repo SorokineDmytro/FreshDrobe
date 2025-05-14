@@ -3,7 +3,7 @@ import TempHeader from '../components/tempHeader'
 
 const Contacts = () => {
   return (
-    <TempHeader headerTempText="Page de Contact"/>
+    <TempHeader headerTempText="Bienvenue sur la page Contact"/>
   )
 }
 

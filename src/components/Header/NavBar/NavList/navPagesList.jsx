@@ -4,7 +4,6 @@ import Payment from '../../../../pages/Payment';
 import Delivery from '../../../../pages/Delivery';
 import Sales from '../../../../pages/Sales';
 import Contacts from '../../../../pages/Contacts';
-import NotFoundPage from '../../../../pages/NotFoundPage';
 
 export const navPagesList = [
   { linkName: "Accueil", linkPath: "/", element: <Home /> },

@@ -3,7 +3,7 @@ import TempHeader from '../components/tempHeader'
 
 const Delivery = () => {
   return (
-    <TempHeader headerTempText="Informations sur la Livraison"/>
+    <TempHeader headerTempText="Bienvenue sur la page Livraison"/>
   )
 }
 

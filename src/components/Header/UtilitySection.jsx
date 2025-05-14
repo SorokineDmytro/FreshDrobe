@@ -1,0 +1,18 @@
+import React from 'react'
+import { Link } from 'react-router'
+import ButtonFilled from '../Other/Buttons/ButtonFilled'
+import SearchBar from './SearchBar/SearchBar'
+import { FaBars } from "react-icons/fa6";
+import { BsCart3 } from "react-icons/bs";
+
+const UtilitySection = () => {
+  return (
+    <section className='hidden h-21 lg:grid grid-cols-[auto_1fr_auto] items-center gap-10'>
+      <ButtonFilled text="Catalogue" color="primary" height='12' width='70' image={FaBars}/>
+      <SearchBar />
+      <Link to="/cart"><ButtonFilled text="Pannier" color="secondary" height='12' width='40' image={BsCart3} /></Link>
+    </section>
+  )
+}
+
+export default UtilitySection

@@ -3,7 +3,7 @@ import TempHeader from '../components/tempHeader'
 
 const Sales = () => {
   return (
-    <TempHeader headerTempText="Promotions et Soldes"/>
+    <TempHeader headerTempText="Bienvenue sur la page Promotions et Soldes"/>
   )
 }
 

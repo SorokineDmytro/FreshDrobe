@@ -3,7 +3,7 @@ import TempHeader from '../components/tempHeader'
 
 const Login = () => {
   return (
-    <TempHeader headerTempText="Bienvenue sur la page de login !"/>
+    <TempHeader headerTempText="Bienvenue sur la page Login !"/>
   )
 }
 
