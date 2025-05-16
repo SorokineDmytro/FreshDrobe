@@ -26,14 +26,17 @@ const bgColorClasses = {
   danger: 'bg-danger',
 }
 
-const ButtonEmpty = ({
-  text = '',
-  bgColor = 'primary',
-  borderColor = 'primary', // or 'transparent'
-  height = '12',
-  width = '45',
-  image:Icon = '',
-}) => {
+const ButtonEmpty = React.forwardRef((props, ref) => {
+  const {
+    text = '',
+    bgColor = 'primary',
+    borderColor = 'primary', // or 'transparent'
+    height = '12',
+    width = '45',
+    image:Icon = '',
+    onClick,
+  } = props;
+
   const heightClass = sizeClasses.height[height] || 'h-12'
   const widthClass = sizeClasses.width[width] || 'w-50'
   const textColorClass = colorClasses[bgColor] || 'text-primary'
@@ -44,6 +47,8 @@ const ButtonEmpty = ({
 
   return (
     <button
+      ref={ref}
+      onClick={onClick}
       className={`${heightClass} ${widthClass} font-['Inter',sans-serif] font-bold text-[15px] rounded-4xl border-1 flex items-center justify-center bg-white ${textColorClass} ${borderColorClass} duration-300 ease-in-out ${hoverBgClass} hover:text-white`}
     >
       {/* Only render icon if image is not empty */}
@@ -53,6 +58,6 @@ const ButtonEmpty = ({
       {text && <span className="px-1.5">{text}</span>}
     </button>
   )
-}
+})
 
 export default ButtonEmpty

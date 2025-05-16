@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBarLink from './NavBarLink/NavBarLink';
-import { navPagesList } from './navPagesList';
+import { navPagesList } from '../../../../../data/navPagesList';
 
 const NavList = () => {
   return (

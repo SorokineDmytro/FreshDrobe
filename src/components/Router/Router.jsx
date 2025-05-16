@@ -1,9 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router';
-import { navPagesList } from '../Header/NavBar/NavList/navPagesList';
+import { navPagesList } from '../../../data/navPagesList';
 import NotFoundPage from '../../pages/NotFoundPage';
 import Login from '../../pages/Login';
 import Cart from '../../pages/Cart';
+import Folder from '../../pages/Section';
 
 
 const Router = () => {
@@ -15,6 +16,8 @@ const Router = () => {
       <Route path="*" element={<NotFoundPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/section/:category/:sub_category" element={<Folder />} />
+      <Route path="/section/:category" element={<Folder />} />
     </Routes>
   );
 };

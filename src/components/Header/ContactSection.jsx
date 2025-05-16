@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonEmpty from '../Other/Buttons/ButtonEmpty'
+import ButtonEmpty from '../UI/Buttons/ButtonEmpty'
 
 const ContactSection = () => {
   return (
