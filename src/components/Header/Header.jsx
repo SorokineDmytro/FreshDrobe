@@ -42,7 +42,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full h-max px-[2%] mb-3 relative">
+    <header className="w-full h-max px-[2.5%] mb-3 relative">
       <div className="2xl:w-[1630px] m-auto">
         <NavBar />
         <div className="flex justify-between items-center flex-col md:flex-row md:h-23 lg:pt-5">
