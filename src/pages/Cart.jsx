@@ -1,10 +1,10 @@
 import React from 'react'
-import TempHeader from '../components/tempHeader'
+import Main from '../components/Main/Main'
 
 
 const Cart = () => {
   return (
-    <TempHeader headerTempText="Bienvenue sur la page Pannier"/>
+    <Main mainContent="Bienvenue sur la page Pannier"/>
   )
 }
 

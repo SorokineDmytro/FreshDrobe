@@ -1,4 +1,8 @@
 import React from "react";
+import { PiCertificateFill } from "react-icons/pi";
+import { GiReceiveMoney } from "react-icons/gi";
+import { FaTruckFast } from "react-icons/fa6";
+
 import SocialCircle from "../UI/Links/SocialCircle";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
@@ -9,6 +13,35 @@ const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full h-fit px-[2.5%] mb-15 md:mb-20 lg:mb-0 bg-white ">
       <div className="2xl:w-[1630px] m-auto">
+        <section className="w-full h-fit grid grid-cols-1 md:grid-cols-3 md:gap-x-5 lg:grid-cols-3 lg:gap-6 pb-4 md:py-4 lg:py-4 2xl:py-5 text-sm lg:text-[16px] border-b-1 border-gray-100">
+          <article className="flex md:flex-col lg:flex-row items-center md:items-start gap-x-5 md:gap-y-4 mt-4 lg:my-4">
+            <div className="h-10 w-10">
+              <PiCertificateFill style={{ width: '40px', height: 'auto', color: "#38C4D9" }} />
+            </div>
+            <div className="h-full flex flex-col justify-items-center">
+            <h3 className="font-['Inter',sans-serif] font-bold">Certificat</h3>
+            <p className="text-custom-gray mt-1">Tous les produits sont certifiés.</p>
+            </div>
+          </article>
+          <article className="flex md:flex-col lg:flex-row items-center md:items-start gap-x-5 md:gap-y-4 mt-4 lg:my-4">
+            <div className="h-10 w-10">
+              <GiReceiveMoney style={{ width: '40px', height: 'auto', color: "#38C4D9" }} />
+            </div>
+            <div className="h-full flex flex-col justify-items-center">
+            <h3 className="font-['Inter',sans-serif] font-bold">Prix avantageux</h3>
+            <p className="text-custom-gray mt-1">Promotions et réductions pour nos clients.</p>
+            </div>
+          </article>
+          <article className="flex md:flex-col lg:flex-row items-center md:items-start gap-x-5 md:gap-y-4 mt-4 lg:my-4">
+            <div className="h-10 w-10">
+              <FaTruckFast style={{ width: '40px', height: 'auto', color: "#38C4D9" }} />
+            </div>
+            <div className="h-full flex flex-col justify-items-center">
+            <h3 className="font-['Inter',sans-serif] font-bold">Livraison rapide</h3>
+            <p className="text-custom-gray mt-1">Livraison rapide en Europe.</p>
+            </div>
+          </article>
+        </section>
         <section className="w-full h-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 py-3.5 lg:py-10 text-sm lg:text-[16px] border-b-1 border-gray-100">
           <article className="flex flex-col md:col-span-2 lg:col-span-1 mt-4 md:mb-3">
             <h2 className="mb-3 font-['Inter',sans-serif] text-[16px] md:text-[18px] lg:text-xl font-bold">
@@ -90,9 +123,11 @@ const Footer = () => {
           </article>
         </section>
         <section className="relative w-full h-fit flex flex-col items-center py-8 text-sm lg:text-l">
-          <span className="text-custom-gray">&#9426; 2025 FreshDrobe SARL | SIRET: 12345677654321</span>
-          <button 
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          <span className="text-custom-gray">
+            &#9426; 2025 FreshDrobe SARL | SIRET: 12345677654321
+          </span>
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="hidden lg:block absolute top-4 right-0 h-12 w-12 rounded-full border border-gray-200 text-xl pt-2 duration-300 ease-in-out hover:bg-primary hover:text-white hover:border-0"
           >
             &#8963;

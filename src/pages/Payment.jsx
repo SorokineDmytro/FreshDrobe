@@ -1,9 +1,9 @@
 import React from 'react'
-import TempHeader from '../components/tempHeader'
+import Main from '../components/Main/Main'
 
 const Payment = () => {
   return (
-    <TempHeader headerTempText="Bienvenue sur la page Paiement"/>
+    <Main mainContent="Bienvenue sur la page Paiement"/>
   )
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
-import TempHeader from '../components/tempHeader'
+import Main from '../components/Main/Main'
 
 const Login = () => {
   return (
-    <TempHeader headerTempText="Bienvenue sur la page Login !"/>
+    <Main mainContent="Bienvenue sur la page Login !"/>
   )
 }
 

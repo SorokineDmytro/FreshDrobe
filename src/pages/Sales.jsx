@@ -1,9 +1,9 @@
 import React from 'react'
-import TempHeader from '../components/tempHeader'
+import Main from '../components/Main/Main'
 
 const Sales = () => {
   return (
-    <TempHeader headerTempText="Bienvenue sur la page Promotions et Soldes"/>
+    <Main mainContent="Bienvenue sur la page Promotions et Soldes"/>
   )
 }
 

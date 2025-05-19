@@ -4,7 +4,7 @@ import { navPagesList } from '../../../data/navPagesList';
 import NotFoundPage from '../../pages/NotFoundPage';
 import Login from '../../pages/Login';
 import Cart from '../../pages/Cart';
-import Folder from '../../pages/Section';
+import Section from '../../pages/Section';
 
 
 const Router = () => {
@@ -16,8 +16,8 @@ const Router = () => {
       <Route path="*" element={<NotFoundPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/cart" element={<Cart />} />
-      <Route path="/section/:category/:sub_category" element={<Folder />} />
-      <Route path="/section/:category" element={<Folder />} />
+      <Route path="/section/:category/:sub_category" element={<Section />} />
+      <Route path="/section/:category" element={<Section />} />
     </Routes>
   );
 };

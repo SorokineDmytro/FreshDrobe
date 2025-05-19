@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
-import TempHeader from "../components/tempHeader";
+import Main from "../components/Main/Main";
 
 const capitalize = (str = "") =>
   str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
@@ -12,8 +12,8 @@ const Section = () => {
   const subCategoryText = sub_category ? ` -> ${capitalize(sub_category)}` : "";
 
   return (
-    <TempHeader
-      headerTempText={`Bienvenue sur la page Section: ${categoryText}${subCategoryText}`}
+    <Main
+      mainContent={`Bienvenue sur la page Section: ${categoryText}${subCategoryText}`}
     />
   );
 };

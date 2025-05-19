@@ -1,10 +1,10 @@
 import React from 'react'
-import TempHeader from '../components/tempHeader'
+import Main from '../components/Main/Main'
 
 
 const About = () => {
   return (
-    <TempHeader headerTempText="Bienvenue sur la page À propos"/>
+    <Main mainContent="Bienvenue sur la page À propos"/>
   )
 }
 

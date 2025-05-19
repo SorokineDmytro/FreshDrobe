@@ -1,9 +1,9 @@
 import React from 'react'
-import TempHeader from '../components/tempHeader'
+import Main from '../components/Main/Main'
 
 const Delivery = () => {
   return (
-    <TempHeader headerTempText="Bienvenue sur la page Livraison"/>
+    <Main mainContent="Bienvenue sur la page Livraison"/>
   )
 }
 
