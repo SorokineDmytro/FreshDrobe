@@ -10,7 +10,7 @@ const ContactSection = () => {
           <button className='font-["Inter",sans-serif] text-[13px] font-bold text-primary lg:hidden'>Me contacter</button>
         </div>
         <div className='hidden lg:grid pt-1'>
-          <ButtonEmpty text="Me contacter" color="primary" />
+          <ButtonEmpty text="Me contacter" color='primary'/>
         </div>
         
     </section>
