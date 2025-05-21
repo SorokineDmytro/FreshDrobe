@@ -85,13 +85,13 @@ export function PromoCarousel() {
                     <h2 className="font-['Inter',sans-serif] font-bold text-[15px] lg:text-lg lg:mb-1">
                       {slide.title}
                     </h2>
-                    <p className="text-custom-gray text-center text-sm lg:text-md lg:mb-3">
+                    <p className="text-custom-gray text-center text-sm lg:text-base lg:mb-3">
                       {slide.subtitle}
                     </p>
                   </div>
                   <Link
                     to={`/section/${slide.title.toLowerCase()}`}
-                    className="w-full md:w-fit h-10 lg:h-fit flex items-center justify-center mt-4 md:mt-0 lg:mt-3.5 px-5 py-1 lg:py-3 rounded-full font-['Inter',sans-serif] font-bold text-[15px] text-primary border border-sky-200 hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+                    className="w-full md:w-fit h-10 lg:h-fit flex items-center justify-center mt-4 md:mt-0 lg:mt-3.5 px-5 py-1 lg:py-3 rounded-full font-['Inter',sans-serif] font-bold text-sm md:text-[15px] text-primary border border-sky-200 hover:bg-primary hover:text-white transition duration-300 ease-in-out"
                   >
                     {slide.cta}
                   </Link>
@@ -120,7 +120,7 @@ export function PromoCarousel() {
       {/* Prev & Next buttons */}
       <button
         onClick={() => emblaApi?.scrollPrev()}
-        className="hidden lg:flex absolute top-1/2 left-5 z-10 w-12 h-12 -translate-y-1/2 items-center justify-center bg-white rounded-full hover:bg-primary hover:border-primary hover:text-white transition duration-300 ease-in-out shadow-sm"
+        className="hidden lg:flex absolute top-4/9 left-5 z-10 w-12 h-12 -translate-y-1/2 items-center justify-center bg-white rounded-full hover:bg-primary hover:border-primary hover:text-white transition duration-300 ease-in-out shadow-sm"
         aria-label="Slide précédente"
       >
         <span className="text-2xl rotate-270 ml-2">
@@ -129,7 +129,7 @@ export function PromoCarousel() {
       </button>
       <button
         onClick={() => emblaApi?.scrollNext()}
-        className="hidden lg:flex absolute top-1/2 right-5 z-10 w-12 h-12 -translate-y-1/2 items-center justify-center bg-white rounded-full hover:bg-primary hover:border-primary hover:text-white transition duration-300 ease-in-out shadow-sm"
+        className="hidden lg:flex absolute top-4/9 right-5 z-10 w-12 h-12 -translate-y-1/2 items-center justify-center bg-white rounded-full hover:bg-primary hover:border-primary hover:text-white transition duration-300 ease-in-out shadow-sm"
         aria-label="Slide suivante"
       >
         <span className="text-2xl rotate-90 mr-2">
