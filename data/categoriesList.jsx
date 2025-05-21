@@ -1,5 +1,3 @@
-import bagImage from '../src/assets/catalog/bag.svg'
-import braImage from '../src/assets/catalog/bra.svg'
 import dressImage from '../src/assets/catalog/dress.svg'
 import jacketImage from '../src/assets/catalog/jacket.svg'
 import shirtImage from '../src/assets/catalog/shirt.svg'
@@ -60,31 +58,6 @@ export const categoriesList = [
     },
     {
         id: 5,
-        name: 'Accessoires',
-        image: bagImage,
-        sub_categories: [
-            { id: 1, name: 'Casquettes' },
-            { id: 2, name: 'Sacs' },
-            { id: 3, name: 'Ceintures' },
-            { id: 4, name: 'Écharpes' },
-            { id: 5, name: 'Gants' },
-        ],
-    },
-    {
-        id: 6,
-        name: 'Sous-vêtements',
-        image: braImage,
-        sub_categories: [
-            { id: 1, name: 'Boxers' },
-            { id: 2, name: 'Chaussettes' },
-            { id: 3, name: 'Débardeurs' },
-            { id: 4, name: 'Soutiens-gorge' },
-            { id: 5, name: 'Maillots de Bain' },
-            { id: 6, name: 'Pyjamas' },
-        ],
-    },
-    {
-        id: 7,
         name: 'Jupes',
         image: skirtImage,
         sub_categories: [
@@ -96,7 +69,7 @@ export const categoriesList = [
         ],
     },
     {
-        id: 8,
+        id: 6,
         name: 'Chemises',
         image: shirtImage,
         sub_categories: [
@@ -107,7 +80,7 @@ export const categoriesList = [
         ],
     },
     {
-        id: 9,
+        id: 7,
         name: 'Pulls',
         image: sweaterImage,
         sub_categories: [
@@ -123,7 +96,7 @@ export const categoriesList = [
         ],
     },
     {
-        id: 10,
+        id: 8,
         name: 'Robes',
         image: dressImage,
         sub_categories: [

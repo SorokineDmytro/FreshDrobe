@@ -3,6 +3,7 @@ import React from 'react'
 // Optional: define allowed widths and heights
 const sizeClasses = {
   height: {
+    '10': 'h-10',
     '12': 'h-12',
   },
   width: {
@@ -12,6 +13,7 @@ const sizeClasses = {
     '70': 'w-70',
     '80': 'w-80',
     '100': 'w-100',
+    'full': 'w-full',
   },
 }
 
