@@ -19,7 +19,7 @@ const UtilitySection = ({ togglePopup, buttonRef }) => {
       <SearchBar />
       <Link to="/cart">
         <ButtonFilled 
-          text="Pannier" 
+          text="Panier" 
           color="secondary" 
           height='12' 
           width='40' 

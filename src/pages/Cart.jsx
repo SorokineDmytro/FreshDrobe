@@ -1,10 +1,13 @@
 import React from 'react'
-import Main from '../components/Main/Main'
-
+import Wrapper from './Wrapper'
 
 const Cart = () => {
   return (
-    <Main mainContent="Bienvenue sur la page Pannier"/>
+    <Wrapper 
+      titleText={"Panier"}
+      pageContent={
+        <h1>Bienvenue sur la page Panier</h1>
+      }/>
   )
 }
 

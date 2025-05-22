@@ -1,9 +1,13 @@
 import React from 'react'
-import Main from '../components/Main/Main'
+import Wrapper from './Wrapper'
 
 const Sales = () => {
   return (
-    <Main mainContent="Bienvenue sur la page Promotions et Soldes"/>
+    <Wrapper 
+      titleText={"Promotions et Soldes"}
+      pageContent={
+        <h1>Bienvenue sur la page Promotions et Soldes</h1>
+      }/>
   )
 }
 

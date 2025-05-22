@@ -1,9 +1,13 @@
 import React from 'react'
-import Main from '../components/Main/Main'
+import Wrapper from './Wrapper'
 
 const Delivery = () => {
   return (
-    <Main mainContent="Bienvenue sur la page Livraison"/>
+    <Wrapper 
+      titleText={"Livraison"}
+      pageContent={
+        <h1>Bienvenue sur la page Livraison</h1>
+      }/>
   )
 }
 

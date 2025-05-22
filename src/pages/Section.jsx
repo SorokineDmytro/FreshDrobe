@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
-import Main from "../components/Main/Main";
+import Wrapper from "./Wrapper";
 
 const capitalize = (str = "") =>
   str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
@@ -12,9 +12,11 @@ const Section = () => {
   const subCategoryText = sub_category ? ` -> ${capitalize(sub_category)}` : "";
 
   return (
-    <Main
-      mainContent={`Bienvenue sur la page Section: ${categoryText}${subCategoryText}`}
-    />
+    <Wrapper
+      titleText={subCategoryText ? `${capitalize(sub_category)}` : `${categoryText}`}
+      pageContent={
+        <h1>Bienvenue sur la page Section: {categoryText}{subCategoryText}</h1>
+      }/>
   );
 };
 

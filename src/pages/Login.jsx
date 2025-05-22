@@ -1,9 +1,13 @@
 import React from 'react'
-import Main from '../components/Main/Main'
+import Wrapper from './Wrapper'
 
 const Login = () => {
   return (
-    <Main mainContent="Bienvenue sur la page Login !"/>
+    <Wrapper 
+      titleText={"Se connecter"}
+      pageContent={
+        <h1>Bienvenue sur la page Login</h1>
+      }/>
   )
 }
 

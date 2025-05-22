@@ -1,9 +1,13 @@
 import React from 'react'
-import Main from '../components/Main/Main'
+import Wrapper from './Wrapper'
 
 const Payment = () => {
   return (
-    <Main mainContent="Bienvenue sur la page Paiement"/>
+    <Wrapper 
+      titleText={"Paiement"}
+      pageContent={
+        <h1>Bienvenue sur la page Paiement</h1>
+      }/>
   )
 }
 

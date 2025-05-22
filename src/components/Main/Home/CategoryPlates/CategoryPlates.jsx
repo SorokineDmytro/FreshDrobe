@@ -32,7 +32,7 @@ const CategoryPlates = () => {
             <p className="text-white/75 text-sm lg:text-base">Plus de 100 produits</p>
           </div>
           <Link
-            to="/categories"
+            to="/section"
             className="w-full md:w-fit h-10 md:h-11 lg:h-12 font-['Inter',sans-serif] text-[15px] font-bold text-white border-white/50 border-1 rounded-4xl px-5 flex items-center justify-center hover:bg-sky-300/30 hover:border-white/75 duration-300 ease-in-out"
           >
             Au catalogue

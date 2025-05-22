@@ -1,10 +1,13 @@
 import React from 'react'
-import Main from '../components/Main/Main'
-
+import Wrapper from './Wrapper'
 
 const About = () => {
   return (
-    <Main mainContent="Bienvenue sur la page À propos"/>
+    <Wrapper 
+      titleText={"À propos de nous"}
+      pageContent={
+        <h1>Bienvenue sur la page À propos</h1>
+      }/>
   )
 }
 

@@ -1,9 +1,13 @@
 import React from 'react'
-import Main from '../components/Main/Main'
+import Wrapper from './Wrapper'
 
 const Contacts = () => {
   return (
-    <Main mainContent="Bienvenue sur la page Contact"/>
+    <Wrapper 
+      titleText={"Contacts"}
+      pageContent={
+        <h1>Bienvenue sur la page Contacts</h1>
+      }/>
   )
 }
 
