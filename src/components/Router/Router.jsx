@@ -6,6 +6,7 @@ import Login from '../../pages/Login';
 import Cart from '../../pages/Cart';
 import Section from '../../pages/Section';
 import Categories from '../../pages/Categories';
+import Articles from '../../pages/Articles';
 
 
 const Router = () => {
@@ -20,6 +21,7 @@ const Router = () => {
       <Route path="/section" element={<Categories />} />
       <Route path="/section/:category/:sub_category" element={<Section />} />
       <Route path="/section/:category" element={<Section />} />
+      <Route path="/articles" element={<Articles />} />
     </Routes>
   );
 };

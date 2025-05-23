@@ -8,7 +8,7 @@ const NotFoundPage = () => {
       titleText={""}
       customLastCrumb={"Page non trouvée"}
       pageContent={
-        <div className="m-auto font-bold flex flex-col gap-y-5 items-center justify-items-center py-50">
+        <div className="m-auto font-bold flex flex-col gap-y-5 items-center justify-items-center py-[15vh]">
           <h1 className="text-5xl">404 - Page non trouvée</h1>
           <p className="text-xl">
             Nous sommes désolés, mais la page que vous recherchez n'existe pas.

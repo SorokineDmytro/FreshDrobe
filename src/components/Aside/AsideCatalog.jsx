@@ -14,7 +14,7 @@ const AsideCatalog = () => {
             to={`/section/${category.name.toLowerCase()}`}
             className="relative w-full h-full flex items-center gap-4"
           >
-            <img src={category.image} alt="" className="w-10 h-10" />
+            <img src={category.logo} alt="" className="w-10 h-10" />
             <h3>{category.name}</h3>
             {category.sub_categories.length > 0 && (
               <span className="absolute right-0 rotate-90 w-5 h-5 flex items-center justify-center">

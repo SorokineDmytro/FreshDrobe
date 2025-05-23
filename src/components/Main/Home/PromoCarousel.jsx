@@ -5,24 +5,28 @@ import Autoplay from "embla-carousel-autoplay";
 import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router";
 
+import shortsImage from '../../../assets/catalog/image/shorts.png'
+import sweatshirtImage from '../../../assets/catalog/image/sweatshirt.png'
+import tshirtImage from '../../../assets/catalog/image/t-shirt.png'
+
 const slides = [
   {
     bg: "bg-[#ffe178]",
-    image: "/images/t-shirt.png",
+    image: tshirtImage,
     title: "T-shirts",
     subtitle: "Collection d'été",
     cta: "En savoir plus",
   },
   {
     bg: "bg-[#96bee6]",
-    image: "/images/shorts.png",
+    image: shortsImage,
     title: "Shorts",
     subtitle: "Confortables et stylés",
     cta: "En savoir plus",
   },
   {
     bg: "bg-[#a2e1a4]",
-    image: "/images/sweat.png",
+    image: sweatshirtImage,
     title: "Sweatshirts",
     subtitle: "Pour les temps frais ",
     cta: "En savoir plus",

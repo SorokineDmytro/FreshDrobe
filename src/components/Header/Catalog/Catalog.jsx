@@ -10,8 +10,8 @@ const Catalog = ({ setIsOpen, category }) => {
               onClick={() => setIsOpen(false)}
               className="flex gap-6 w-full h-fit items-center bg-white mb-3 cursor-pointer hover:text-primary hover:duration-200 duration-200 hover:ease-in-out"
             >
-              <img src={category.image} alt="" className="w-10 h-10" />
-              <h2 className="font-['Inter',sans-serif] font-bold">{category.name}</h2>
+              <img src={category.logo} alt="" className="w-10 h-10" />
+              <h2 className="font-['Inter',sans-serif] ">{category.name}</h2>
             </Link>
             <ul className="w-full h-fit flex flex-col border-t-1 border-gray-100 pt-3">
               {category.sub_categories.map((sub_category) => (
