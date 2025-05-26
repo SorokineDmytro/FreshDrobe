@@ -3,7 +3,7 @@ import { promosList } from "../../../data/promosList";
 import CustomLink from "../UI/Links/CustomLink";
 import AsideBlock from "./AsideBlock";
 
-const Promo = () => {
+const Sales = () => {
   return (
     <AsideBlock name="Offres" path="/sales" buttonName="plus d'offres" content={
       <div className="relative w-full h-fit flex flex-col md:flex-row lg:flex-col gap-5 bg-white rounded-4xl p-4 lg:p-0">
@@ -19,7 +19,7 @@ const Promo = () => {
           <span className="lg:hidden bg-danger rounded-4xl text-white font-['Inter',sans-serif] font-bold text-xs px-2 py-1">
             Solde {promosList[0].promoRate}%
           </span>
-          <h4 className="font-['Inter',sans-serif] font-bold w-full lg:pb-3 lg:mb-3 lg:border-b-1 lg:border-gray-100 ">
+          <h4 className="font-['Inter',sans-serif] font-bold w-full lg:pb-3 lg:mb-3 lg:border-b-1 lg:border-gray-200 ">
             {promosList[0].title}
           </h4>
           <p className="text-custom-gray text-sm lg:text-base">
@@ -33,4 +33,4 @@ const Promo = () => {
   );
 };
 
-export default Promo;
+export default Sales;

@@ -7,6 +7,7 @@ import Cart from '../../pages/Cart';
 import Section from '../../pages/Section';
 import Categories from '../../pages/Categories';
 import Articles from '../../pages/Articles';
+import Article from '@/pages/Article';
 
 
 const Router = () => {
@@ -22,6 +23,7 @@ const Router = () => {
       <Route path="/section/:category/:sub_category" element={<Section />} />
       <Route path="/section/:category" element={<Section />} />
       <Route path="/articles" element={<Articles />} />
+      <Route path="/articles/:id" element={<Article />} />
     </Routes>
   );
 };
