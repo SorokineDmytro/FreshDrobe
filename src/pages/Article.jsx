@@ -32,7 +32,8 @@ const Article = () => {
   }
   return (
     <Wrapper
-      titleText={`Article #${articleId}`}
+      titleText={article.title}
+      customLastCrumb={article.title}
       pageContent={
         <div className="w-full flex flex-col gap-3">
           <span className="text-sm text-custom-gray">
@@ -42,9 +43,8 @@ const Article = () => {
             <img
               src={article.image}
               alt={article.title}
-              className="float-left mr-6 mb-3 w-100 h-auto object-cover rounded-4xl"
+              className="float-left mr-4 md:mr-6 mb-1 md:mb-2 lg:mb-3 w-40 md:w-70 lg:w-100 h-auto object-cover rounded-4xl"
             />
-            <h1 className="text-xl text-primary">{article.title}</h1>
             <p className="text-[15px]">{article.text}</p>
           </div>
         </div>

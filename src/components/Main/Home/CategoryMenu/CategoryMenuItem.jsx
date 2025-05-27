@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-const CategoryPlatesItem = ({ category }) => {
+const CategoryMenuItem = ({ category }) => {
   return (
           <li
             key={category.id}
@@ -21,4 +21,4 @@ const CategoryPlatesItem = ({ category }) => {
   )
 }
 
-export default CategoryPlatesItem
+export default CategoryMenuItem

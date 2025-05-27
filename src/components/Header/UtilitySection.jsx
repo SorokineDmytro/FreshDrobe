@@ -14,7 +14,7 @@ const UtilitySection = ({ togglePopup, buttonRef }) => {
         text="Catalogue" 
         color="primary" 
         height='12' 
-        width='80' 
+        width='75' 
         image={FaBars}/>
       <SearchBar />
       <Link to="/cart">

@@ -3,9 +3,9 @@ import { categoriesList } from "../../../../../data/categoriesList";
 import { Link } from "react-router";
 
 import Dropdown from "@/components/UI/Dropdowns/Dropdown";
-import CategoryPlatesItem from "./CategoryPlatesItem";
+import CategoryMenuItem from "./CategoryMenuItem";
 
-const CategoryPlates = () => {
+const CategoryMenu = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleCatalog = () => {
@@ -16,7 +16,7 @@ const CategoryPlates = () => {
   return (
     <div className="relative mt-5 md:mt-3 w-full h-full flex flex-col gap-y-3">
       <ul
-        className={`relative pb-3 overflow-hidden grid grid-cols-1 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,minmax(236px,1fr))] auto-rows-[68px] md:auto-rows-[130px] md:grid-rows-[92px] lg:auto-rows-[168px] lg:grid-rows-[168px] gap-y-3 md:gap-5 lg:gap-y-7.5 transition-all duration-500 ease-in-out`}
+        className={`relative pb-3 overflow-hidden grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-[repeat(auto-fill,minmax(236px,1fr))] auto-rows-[68px] md:auto-rows-[130px] md:grid-rows-[92px] lg:auto-rows-[168px] lg:grid-rows-[168px] gap-y-3 md:gap-5 2xl:gap-y-7.5 transition-all duration-500 ease-in-out`}
         style={{
           maxHeight: window.innerWidth < 768 ? `${maxHeight}px` : "none",
         }}
@@ -39,7 +39,7 @@ const CategoryPlates = () => {
           </Link>
         </li>
         {categoriesList.map((category) => (
-          <CategoryPlatesItem category={category} key={category.id}/>
+          <CategoryMenuItem category={category} key={category.id}/>
         ))}
       </ul>
 
@@ -51,4 +51,4 @@ const CategoryPlates = () => {
   );
 };
 
-export default CategoryPlates;
+export default CategoryMenu;
