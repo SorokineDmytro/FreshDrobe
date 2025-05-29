@@ -143,7 +143,7 @@ export function PromoCarousel() {
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
-            className={`w-1.25 h-1.25 md:w-1.5 md:h-1.5 lg:w-2 lg:h-2 rounded-full ${
+            className={`w-1.25 h-1.25 md:w-1.5 md:h-1.5 2xl:w-2 2xl:h-2 rounded-full ${
               index === selectedIndex ? "bg-primary" : "bg-gray-300"
             } transition`}
             aria-label={`Aller au slide ${index + 1}`}

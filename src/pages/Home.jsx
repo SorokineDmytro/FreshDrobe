@@ -4,7 +4,7 @@ import { PromoCarousel } from '../components/Main/Home/PromoCarousel'
 import CategoryMenu from '@/components/Main/Home/CategoryMenu/CategoryMenu'
 import Sales from '@/components/Aside/Sales'
 import ArticlesList from '@/components/Aside/Articles/ArticlesList'
-import Catalog from '@/components/Main/Home/Catalog/Catalog'
+import CatalogNew from '@/components/Main/Home/Catalogs/CatalogNew'
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
         <main className='w-full lg:w-0 flex flex-col gap-y-2.5 md:gap-y-5 lg:gap-y-7.5 lg:flex-grow h-full'>
           <PromoCarousel />
           <CategoryMenu />
-          <Catalog />
+          <CatalogNew />
           <div className='lg:hidden'>
             <Sales />
           </div>
