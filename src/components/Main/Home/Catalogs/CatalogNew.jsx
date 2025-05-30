@@ -1,89 +1,31 @@
-"use client";
-
-import useEmblaCarousel from "embla-carousel-react";
-import { useEffect, useState } from "react";
+import React from "react";
 import { productList } from "../../../../../data/productList";
-import CatalogItem from "./Catalog/CatalogItem";
+import CatalogCarousel from "./Catalog/CatalogCarousel";
 
-export default function PromoCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-    align: "start",
-    slidesToScroll: 1,
-    containScroll: "trimSnaps",
-  });
+const CatalogNew = () => {
+  const dateToday = new Date();
 
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState([]);
+  // Function to compare dates
+  const isProductNew = (dateString) => {
+    if (!dateString) return false;
+    const productDate = new Date(dateString);
 
-  useEffect(() => {
-    if (!emblaApi) return;
+    const diffInMs = dateToday - productDate;
+    const diffInDays = diffInMs / (1000 * 60 * 60 * 24); // ms to days
 
-    const onSelect = () => {
-      setSelectedIndex(emblaApi.selectedScrollSnap());
-    };
+    return diffInDays < 30;
+  };
 
-    setScrollSnaps(emblaApi.scrollSnapList());
-    emblaApi.on("select", onSelect);
-    emblaApi.on("reInit", onSelect);
-
-    return () => {
-      emblaApi.off("select", onSelect);
-      emblaApi.off("reInit", onSelect);
-    };
-  }, [emblaApi]);
-
-  return (
-    <div className="my-5 lg:my-10 2xl:my-15 overflow-x">
-      <div className="flex items-center justify-between lg:mb-4">
-        <h2 className="font-['Inter',sans-serif] font-bold md:text-lg lg:text-[21px]">
-          Nouveaux arrivages
-        </h2>
-        <div className="flex items-center justify-between gap-5 h-12">
-          {/* Prev & Next buttons */}
-          <button
-            onClick={() => emblaApi?.scrollPrev()}
-            className="hidden lg:flex h-full aspect-square items-center justify-center bg-white rounded-full hover:bg-primary hover:border-primary hover:text-white transition duration-300 ease-in-out shadow-sm"
-            aria-label="Slide précédente"
-          >
-            <span className="text-2xl rotate-270 ml-2">&#8963;</span>
-          </button>
-          <span className="text-custom-gray text-sm font-['Inter',sans-serif] font-bold">{selectedIndex+1} / {scrollSnaps.length}</span>
-          <button
-            onClick={() => emblaApi?.scrollNext()}
-            className="hidden lg:flex h-full aspect-square items-center justify-center bg-white rounded-full hover:bg-primary hover:border-primary hover:text-white transition duration-300 ease-in-out shadow-sm"
-            aria-label="Slide suivante"
-          >
-            <span className="text-2xl rotate-90 mr-2">&#8963;</span>
-          </button>
-        </div>
-      </div>
-      <div className="overflow-hidden" ref={emblaRef}>
-        <ul className="flex lg:py-2">
-          {productList.map((product) => (
-            <li
-              key={product.id}
-              className="embla__slide shrink-0 px-2 w-1/2 md:w-1/3 lg:w-1/4 2xl:w-1/5"
-            >
-              <CatalogItem product={product} />
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Dots */}
-      <div className="flex justify-center mt-4 md:mt-5 gap-2">
-        {scrollSnaps.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => emblaApi?.scrollTo(index)}
-            className={`w-1.25 h-1.25 md:w-1.5 md:h-1.5 2xl:w-2 2xl:h-2 rounded-full ${
-              index === selectedIndex ? "bg-primary" : "bg-gray-300"
-            }`}
-            aria-label={`Aller au slide ${index + 1}`}
-          />
-        ))}
-      </div>
-    </div>
+  const newProductList = productList.filter((item) =>
+    isProductNew(item.created_at)
   );
-}
+
+  // if there are no new products
+  if (newProductList.length === 0) {
+    return null;
+  }
+  // default render
+  return <CatalogCarousel title="Nouveaux arrivages" array={newProductList} />;
+};
+
+export default CatalogNew;

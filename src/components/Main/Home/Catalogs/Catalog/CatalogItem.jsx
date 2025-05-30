@@ -22,7 +22,7 @@ const CatalogItem = ({ product }) => {
         className="relative flex-grow w-full aspect-square rounded-2xl overflow-hidden bg-gray-100"
       >
         <img
-          src={product.image}
+          src={product.image[0]}
           alt={product.name}
           className="absolute top-0 left-0 w-full h-full object-cover"
         />

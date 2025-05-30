@@ -14,7 +14,7 @@ const CategoryMenu = () => {
   const maxHeight = isExpanded ? 9999 : 480;
 
   return (
-    <div className="relative mt-5 md:mt-3 w-full h-full flex flex-col gap-y-3">
+    <div className="relative mt-5 md:mt-3 mb-5 2xl:mb-10 w-full h-full flex flex-col gap-y-3">
       <ul
         className={`relative pb-3 overflow-hidden grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-[repeat(auto-fill,minmax(236px,1fr))] auto-rows-[68px] md:auto-rows-[130px] md:grid-rows-[92px] lg:auto-rows-[168px] lg:grid-rows-[168px] gap-y-3 md:gap-5 2xl:gap-y-7.5 transition-all duration-500 ease-in-out`}
         style={{

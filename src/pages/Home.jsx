@@ -5,6 +5,8 @@ import CategoryMenu from '@/components/Main/Home/CategoryMenu/CategoryMenu'
 import Sales from '@/components/Aside/Sales'
 import ArticlesList from '@/components/Aside/Articles/ArticlesList'
 import CatalogNew from '@/components/Main/Home/Catalogs/CatalogNew'
+import CatalogPromo from '@/components/Main/Home/Catalogs/CatalogPromo'
+import AboutUsBlock from '@/components/Main/Home/AboutUsBlock'
 
 const Home = () => {
   return (
@@ -19,9 +21,11 @@ const Home = () => {
           <PromoCarousel />
           <CategoryMenu />
           <CatalogNew />
+          <CatalogPromo />
           <div className='lg:hidden'>
             <Sales />
           </div>
+          <AboutUsBlock />
           <div className='lg:hidden'>
             <ArticlesList />
           </div>

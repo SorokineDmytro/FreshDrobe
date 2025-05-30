@@ -25,7 +25,7 @@ export const productList = [
     name: "Sport T-Shirts 2",
     description: "Description for Sport T-Shirts 2",
     price: 26.6,
-    discount_rate: 0,
+    discount_rate: 20,
     image: [tshirtImage],
     median_rate: 1.64,
     created_at: "2025-05-27T10:14:10.272052",
