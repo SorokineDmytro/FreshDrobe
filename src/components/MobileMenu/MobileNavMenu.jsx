@@ -3,6 +3,7 @@ import { navPagesList } from "../../../data/navPagesList";
 import { categoriesList } from "../../../data/categoriesList";
 import { Link, useLocation } from "react-router";
 import MobileCategoryNavMenu from "./MobileCategoryNavMenu";
+import { capitalizeFirstLetter } from "@/utils/stringUtils";
 
 const MobileNavMenu = ({
   setIsOpen,
@@ -64,7 +65,7 @@ const MobileNavMenu = ({
               onClick={() => handleCategoryClick(category)}
               className="w-full flex items-center justify-between"
             >
-              {category.name}
+              {capitalizeFirstLetter(category.name)}
               {category.sub_categories.length > 0 && (
                 <span className="rotate-90 text-bold text-[15px]">&#8963;</span>
               )}

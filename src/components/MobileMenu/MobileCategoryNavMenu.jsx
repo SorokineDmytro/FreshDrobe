@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import { capitalizeFirstLetter } from "@/utils/stringUtils";
 
 const MobileCategoryNavMenu = ({ category, onClose, handleCloseNav }) => {
   const handleFullClose = () => {
@@ -26,11 +27,11 @@ const MobileCategoryNavMenu = ({ category, onClose, handleCloseNav }) => {
           className="w-full h-13 flex items-center justify-between pl-4.5 pr-7 font-['Inter',sans-serif] text-[15px] font-bold border-b border-gray-200"
         >
           <Link
-            to={`/section/${category.name.toLowerCase()}`}
+            to={`/section/${category.name}`}
             className="w-full h-full flex items-center"
             onClick={handleFullClose}
           >
-            {category.name}
+            {capitalizeFirstLetter(category.name)}
           </Link>
         </li>
         {category.sub_categories.map((sub) => (
@@ -39,11 +40,11 @@ const MobileCategoryNavMenu = ({ category, onClose, handleCloseNav }) => {
             className="w-full h-13 flex items-center justify-between pl-4.5 pr-7 font-['Inter',sans-serif] text-[13px] font-bold border-b border-gray-200"
           >
             <Link
-              to={`/section/${category.name.toLowerCase()}/${sub.name.toLowerCase()}`}
+              to={`/section/${category.name}/${sub.name}`}
               className="w-full h-full flex items-center"
               onClick={handleFullClose}
             >
-              {sub.name}
+              {capitalizeFirstLetter(sub.name)}
             </Link>
           </li>
         ))}

@@ -1,6 +1,7 @@
 import React from "react";
 import { categoriesList } from "../../../data/categoriesList";
 import { Link } from "react-router";
+import { capitalizeFirstLetter } from "@/utils/stringUtils";
 
 const AsideCatalog = () => {
   return (
@@ -15,7 +16,7 @@ const AsideCatalog = () => {
             className="relative w-full h-full flex items-center gap-4"
           >
             <img src={category.logo} alt="" className="w-10 h-10" />
-            <h3>{category.name}</h3>
+            <h3>{capitalizeFirstLetter(category.name)}</h3>
             {category.sub_categories.length > 0 && (
               <span className="absolute right-0 rotate-90 w-5 h-5 flex items-center justify-center">
                 &#8963;
@@ -34,7 +35,7 @@ const AsideCatalog = () => {
                     to={`/section/${category.name.toLowerCase()}/${subCategory.name.toLowerCase()}`}
                     className="w-full h-full"
                   >
-                    {subCategory.name}
+                    {capitalizeFirstLetter(subCategory.name)}
                   </Link>
                 </li>
               ))}

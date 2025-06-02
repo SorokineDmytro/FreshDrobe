@@ -9,15 +9,7 @@ const About = () => {
       titleText={"À propos de nous"}
       pageContent={
         <section className="flex flex-col gap-5">
-          <div className="flex gap-5 flex-col text-base md:text-lg 2xl:text-xl">
-            <img
-              src="/logo.png"
-              alt="FreshDrobe logo"
-              className="w-full md:w-56 float-right rounded-3xl object-cover"
-            />
-            <AboutText />
-          </div>
-
+          <AboutText imageSrc={"/logo.png"}/>
           <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-5">
             {aboutUsData.map((elem) => (
               <li
