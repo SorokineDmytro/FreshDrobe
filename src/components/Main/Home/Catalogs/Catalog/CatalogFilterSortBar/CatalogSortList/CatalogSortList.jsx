@@ -26,7 +26,7 @@ const CatalogSortList = ({
   return (
     <ul
       ref={innerRef}
-      className="absolute top-0 right-0 z-10 rounded-4xl bg-white w-full h-fit pt-10 text-sm text-custom-gray overflow-hidden"
+      className="absolute top-0 right-0 z-10 rounded-4xl bg-white w-full h-fit pt-10 text-sm lg:text-base shadow-sm text-custom-gray overflow-hidden"
     >
       {visibleOptions.map(({ value, label, icon }) => (
         <CatalogSortListItem

@@ -1,4 +1,4 @@
-import { PiHeartDuotone } from "react-icons/pi";
+import { PiStarDuotone } from "react-icons/pi";
 import {
   BsSortDownAlt,
   BsSortDown,
@@ -12,6 +12,6 @@ export const SORT_OPTIONS = [
   { value: "priceDesc", label: "Prix décroissant", icon: BsSortDown },
   { value: "nameAsc", label: "Nom A → Z", icon: BsSortAlphaDown },
   { value: "nameDesc", label: "Nom Z → A", icon: BsSortAlphaUp },
-  { value: "rateDesc", label: "Coups de coeur", icon: PiHeartDuotone },
+  { value: "rateDesc", label: "Classement", icon: PiStarDuotone },
   { value: "default", label: "Par default", icon: BsSortNumericDown },
 ];

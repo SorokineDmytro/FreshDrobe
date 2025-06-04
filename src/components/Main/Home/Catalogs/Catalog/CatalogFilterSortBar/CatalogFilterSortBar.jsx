@@ -40,7 +40,7 @@ const CatalogFilterSortBar = ({ setSortOption }) => {
   }, []);
 
   return (
-    <div className="h-10 mb-4 grid grid-cols-2 grid-rows-1 gap-4 justify-between">
+    <div className="h-10 mb-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 grid-rows-1 gap-4 justify-between text-sm md:text-base ">
       <button className="flex items-center justify-center gap-3 h-full w-full px-4 rounded-4xl bg-primary text-white font-bold">
         <FaSliders /> Filtrer
       </button>
